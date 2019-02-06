@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="btns">
+            <button class="btn" id="openLogin" onclick="openModal('authModal','loginTab')">Вход</button>
+            <button class="btn" id="openSignup" onclick="openModal('authModal','signupTab')">Регистрация</button>
+        </div>
+    </div>
+
+    <div class="modal-container close" id="modalContainer">
+
+
+        <div class="modal close" id="authModal">
+            <div class="modal-header">
+                <button class="btn btn-tab" onclick="openTab('loginTab')" data-for-tab="loginTab">Вход</button>
+                <button class="btn btn-tab" onclick="openTab('signupTab')" data-for-tab="signupTab">Регистрация</button>
+            </div>
+
+            <form action="" class="modal-content form-login close" id="formLogin" data-tab='loginTab'>
+                <div class="input-box">
+                    <img src="./icon/mail.svg" alt="">
+                    <input type="text" class="input input-email" placeholder="E-mail" id="inputEmail">
+                </div>
+                <div class="input-box">
+                    <img src="./icon/key.svg" alt="">
+                    <input type="password" class="input input-pasword" placeholder="Пароль" id="inputPassword">
+                    <button class="btn btn-pass-view" id='btnPassView' data-password="inputPassword">Показать</button>
+                </div>
+                <label class="cb-remember">
+                    <input type="checkbox" id="cbRemember">
+                    <span>Запомнить меня</span>
+                </label>
+                <button class="btn">Войти</button>
+            </form>
+
+            <form action="" class="modal-content form-signup close" id="formSignup" data-tab='signupTab'>
+                <div class="input-box">
+                    <img src="./icon/mail.svg" alt="">
+                    <input type="text" class="input input-email" placeholder="E-mail" id="inputEmail">
+                </div>
+                <div class="input-box">
+                    <img src="./icon/key.svg" alt="">
+                    <input type="password" class="input input-pasword" placeholder="Пароль" id="inputPassword1">
+                    <button class="btn btn-pass-view" id='btnPassView' data-password="inputPassword1">Показать</button>
+                </div>
+                <div class="input-box">
+                    <img src="./icon/key.svg" alt="">
+                    <input type="password" class="input input-pasword" placeholder="Пароль повторно" id="inputPassword2">
+                    <button class="btn btn-pass-view" id='btnPassView' data-password="inputPassword2">Показать</button>
+                </div>
+                <button class="btn">Зпрегистрироваться</button>
+            </form>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <script type="text/javascript" src="./common.js"></script>
+</body>
+
+</html>
