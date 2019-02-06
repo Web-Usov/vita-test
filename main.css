@@ -173,3 +173,17 @@ body{
 .cb-remember input{
     cursor: pointer;
 }
+.forgot-password{
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+    width: 100%;
+    color: #ddd;
+    text-align: center;
+    padding: 10px;
+
+}
+.forgot-password:hover{
+    color: #fff;
+}
